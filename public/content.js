@@ -79,9 +79,9 @@ window.SOGOOD = {
       "We haven't finalized the exact split yet. These numbers are placeholders, and we'll post the real breakdown here before the first shirt sells.",
     // The parts should add up to the shirt price above. Colors are from the list below.
     parts: [
-      { label: "Making & shipping the shirt", amount: 14, color: "sky" },
-      { label: "[His Name]'s care & therapy", amount: 10, color: "sun" },
-      { label: "Helping other survivors", amount: 4, color: "bubblegum" },
+      { label: "Making & shipping the shirt", amount: 14, color: "heather" },
+      { label: "[His Name]'s care & therapy", amount: 10, color: "black" },
+      { label: "Helping other survivors", amount: 4, color: "dusty" },
     ],
     promise:
       "We'll share an update every few months showing how much was raised and exactly where it went.",
@@ -102,7 +102,7 @@ window.SOGOOD = {
       name: "So Good Tee",
       kind: "tee",
       price: 28,
-      colors: ["white", "sun", "sky", "bubblegum"],
+      colors: ["white", "black", "heather", "dusty"],
       description: "The original. Soft, everyday tee with the words he says most.",
       shopLink: "",
     },
@@ -112,7 +112,7 @@ window.SOGOOD = {
       name: "Very Good Tee",
       kind: "tee",
       price: 28,
-      colors: ["sun", "white", "grass", "ink"],
+      colors: ["black", "white", "stone"],
       description: "For the days that are better than good.",
       shopLink: "",
     },
@@ -122,7 +122,7 @@ window.SOGOOD = {
       name: "Yup Tee",
       kind: "tee",
       price: 28,
-      colors: ["grass", "sky", "white", "sun"],
+      colors: ["dusty", "black", "white"],
       description: "One word. Total agreement. His go-to answer for just about everything.",
       shopLink: "",
     },
@@ -132,7 +132,7 @@ window.SOGOOD = {
       name: "So Good Crewneck",
       kind: "crew",
       price: 48,
-      colors: ["sky", "ink", "white"],
+      colors: ["heather", "black", "stone"],
       description: "Heavyweight crewneck sweatshirt for cozy, so-good days.",
       shopLink: "",
     },
@@ -142,7 +142,7 @@ window.SOGOOD = {
       name: "Very Good Crewneck",
       kind: "crew",
       price: 48,
-      colors: ["bubblegum", "grass", "ink"],
+      colors: ["black", "dusty"],
       description: "Same words, warmer fit.",
       shopLink: "",
     },
@@ -150,12 +150,11 @@ window.SOGOOD = {
 
   // Shirt color names and how they look. Add your own: name: ["shirt color", "print color"]
   colors: {
-    white:     ["#FFFFFF", "#1B1F5E"],
-    sun:       ["#FFD23F", "#1B1F5E"],
-    sky:       ["#7CC4FF", "#1B1F5E"],
-    bubblegum: ["#FF8FC7", "#1B1F5E"],
-    grass:     ["#3FC27A", "#FFFFFF"],
-    ink:       ["#1B1F5E", "#FFD23F"],
+    white:   ["#FFFFFF", "#000000"],
+    black:   ["#1A1A1A", "#FFFFFF"],
+    heather: ["#C9C9C5", "#000000"],
+    stone:   ["#E6E3DC", "#000000"],
+    dusty:   ["#8FAAC4", "#FFFFFF"],
   },
 
   /* ---------- SIZES & FIT ---------- */

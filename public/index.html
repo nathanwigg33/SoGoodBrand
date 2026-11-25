@@ -5,77 +5,80 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>So Good | Simple shirts. Big heart.</title>
 <meta name="description" content="Simple shirts with the words he says every day. Every shirt supports a brain injury survivor and people like him.">
-<meta name="theme-color" content="#FFD23F">
+<meta name="theme-color" content="#000000">
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
-<link rel="preload" href="/assets/fonts/bagel-fat-one-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/archivo-latin-wdth-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/styles.css">
 <script src="/content.js"></script>
 </head>
 <body>
 <header id="site-header"></header>
 <main>
-<section class="hero">
+<section class="hero on-dark">
   <div class="wrap hero-grid">
-    <div class="hero-copy">
+    <div>
       <h1 class="sr-only">So Good</h1>
-      <button class="say" id="say" type="button" aria-label="Show the next saying"><span class="say-word" aria-live="polite">So good</span><span class="say-hint" aria-hidden="true">tap me</span></button>
+      <div class="say-hint">Tap to hear what he says</div><br>
+      <button class="say" id="say" type="button" aria-label="Show the next saying"><svg class="say-outline" aria-hidden="true"></svg><span class="say-word" aria-live="polite">so good</span></button>
       <p class="lead" data-text="heroText"></p>
       <div class="btn-row">
         <a class="btn" href="/shop">Shop the shirts</a>
-        <a class="btn btn-light" href="/purpose">Read his story</a>
+        <a class="btn btn-ghost" href="/purpose">Read his story</a>
       </div>
     </div>
-    <div class="hero-shirts" id="hero-shirts" aria-hidden="true"></div>
+    <figure class="hero-shirt" id="hero-shirt"></figure>
   </div>
 </section>
 
 <section class="section">
   <div class="wrap">
-    <div class="section-head"><h2>The shirts</h2><a class="link-arrow" href="/shop">See all shirts</a></div>
+    <div class="section-head"><h2>the shirts</h2><a class="text-link" href="/shop">See all</a></div>
     <div data-shirts="4"></div>
   </div>
 </section>
 
-<section class="section section-sky">
+<section class="section section-paper">
   <div class="wrap split">
     <div data-photo></div>
     <div>
+      <p class="kicker">Our purpose</p>
       <h2 data-text="purpose.headline"></h2>
       <ul data-points></ul>
-      <a class="btn" href="/purpose">Our purpose</a>
+      <a class="btn" href="/purpose">Read his story</a>
     </div>
   </div>
 </section>
 
 <section class="section">
   <div class="wrap">
-    <div class="section-head"><h2>Things he says</h2></div>
+    <div class="section-head"><h2>things he says</h2></div>
     <div data-quotes></div>
   </div>
 </section>
 
-<section class="section section-sun">
+<section class="section section-line">
   <div class="wrap split">
     <div>
+      <p class="kicker">Where the money goes</p>
       <h2 data-text="money.headline"></h2>
-      <p class="lead" data-text="money.intro"></p>
-      <a class="btn" href="/money">Where the money goes</a>
+      <p class="muted measure" data-text="money.intro"></p>
+      <a class="text-link" href="/money">See the full breakdown</a>
     </div>
     <div data-money></div>
   </div>
 </section>
 
-<section class="section section-ink">
+<section class="section section-dark on-dark">
   <div class="wrap notify">
     <div>
-      <h2>Be first in line.</h2>
+      <h2>be first in line.</h2>
       <p class="lead">Shirts are almost ready. Leave your email and we'll tell you the day they go on sale.</p>
     </div>
     <div>
       <form class="notify-form" data-notify>
         <label class="sr-only" for="notify-email">Your email</label>
-        <input id="notify-email" type="email" placeholder="you@email.com" required>
-        <button class="btn btn-sun" type="submit">Get notified</button>
+        <input id="notify-email" type="email" placeholder="Your email" required>
+        <button class="btn" type="submit">Get notified</button>
       </form>
       <p class="small">This opens an email to us for now. A real sign-up list is coming soon.</p>
     </div>
