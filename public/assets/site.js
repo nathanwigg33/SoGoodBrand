@@ -31,7 +31,7 @@
   function shirtSVG(shirt, colorName, label) {
     var c = color(colorName || shirt.colors[0]);
     var words = shirt.saying;
-    var size = Math.min(46, Math.round(250 / Math.max(words.length, 4)));
+    var size = Math.min(words.length <= 4 ? 64 : 46, Math.round(250 / Math.max(words.length, 4)));
     var crew = shirt.kind === "crew";
     return (
       '<svg class="tee" viewBox="0 0 300 320" role="img" aria-label="' + esc(label || shirt.name) + '">' +

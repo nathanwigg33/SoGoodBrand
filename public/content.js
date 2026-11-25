@@ -33,6 +33,7 @@ window.SOGOOD = {
     "Very good",
     "So, so good",
     "Very, very good",
+    "Yup",
   ],
 
   heroText:
@@ -42,6 +43,7 @@ window.SOGOOD = {
   quotes: [
     { text: "So good.", who: "[His Name], about almost everything" },
     { text: "Very good. Very, very good.", who: "[His Name], after his first walk outside" },
+    { text: "Yup.", who: "[His Name], when you ask if he wants dessert" },
     { text: "He reminds all of us to notice the good.", who: "[Family member]" },
   ],
 
@@ -112,6 +114,16 @@ window.SOGOOD = {
       price: 28,
       colors: ["sun", "white", "grass", "ink"],
       description: "For the days that are better than good.",
+      shopLink: "",
+    },
+    {
+      id: "yup-tee",
+      saying: "Yup",
+      name: "Yup Tee",
+      kind: "tee",
+      price: 28,
+      colors: ["grass", "sky", "white", "sun"],
+      description: "One word. Total agreement. His go-to answer for just about everything.",
       shopLink: "",
     },
     {
