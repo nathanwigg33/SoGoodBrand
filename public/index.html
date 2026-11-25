@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>So Good | Simple shirts. Big heart.</title>
+<meta name="description" content="Simple shirts with the words he says every day. Every shirt supports a brain injury survivor and people like him.">
+<meta name="theme-color" content="#FFD23F">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/assets/fonts/bagel-fat-one-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/styles.css">
+<script src="/content.js"></script>
+</head>
+<body>
+<header id="site-header"></header>
+<main>
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <h1 class="sr-only">So Good</h1>
+      <button class="say" id="say" type="button" aria-label="Show the next saying"><span class="say-word" aria-live="polite">So good</span><span class="say-hint" aria-hidden="true">tap me</span></button>
+      <p class="lead" data-text="heroText"></p>
+      <div class="btn-row">
+        <a class="btn" href="/shop">Shop the shirts</a>
+        <a class="btn btn-light" href="/purpose">Read his story</a>
+      </div>
+    </div>
+    <div class="hero-shirts" id="hero-shirts" aria-hidden="true"></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head"><h2>The shirts</h2><a class="link-arrow" href="/shop">See all shirts</a></div>
+    <div data-shirts="4"></div>
+  </div>
+</section>
+
+<section class="section section-sky">
+  <div class="wrap split">
+    <div data-photo></div>
+    <div>
+      <h2 data-text="purpose.headline"></h2>
+      <ul data-points></ul>
+      <a class="btn" href="/purpose">Our purpose</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head"><h2>Things he says</h2></div>
+    <div data-quotes></div>
+  </div>
+</section>
+
+<section class="section section-sun">
+  <div class="wrap split">
+    <div>
+      <h2 data-text="money.headline"></h2>
+      <p class="lead" data-text="money.intro"></p>
+      <a class="btn" href="/money">Where the money goes</a>
+    </div>
+    <div data-money></div>
+  </div>
+</section>
+
+<section class="section section-ink">
+  <div class="wrap notify">
+    <div>
+      <h2>Be first in line.</h2>
+      <p class="lead">Shirts are almost ready. Leave your email and we'll tell you the day they go on sale.</p>
+    </div>
+    <div>
+      <form class="notify-form" data-notify>
+        <label class="sr-only" for="notify-email">Your email</label>
+        <input id="notify-email" type="email" placeholder="you@email.com" required>
+        <button class="btn btn-sun" type="submit">Get notified</button>
+      </form>
+      <p class="small">This opens an email to us for now. A real sign-up list is coming soon.</p>
+    </div>
+  </div>
+</section>
+</main>
+<footer id="site-footer"></footer>
+<script src="/assets/site.js"></script>
+</body>
+</html>

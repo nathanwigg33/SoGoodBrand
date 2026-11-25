@@ -1,0 +1,10 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "sogoodbrand",
+  "compatibility_date": "2026-11-01",
+  // A plain website: Cloudflare serves the files in /public as they are.
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "404-page"
+  }
+}
